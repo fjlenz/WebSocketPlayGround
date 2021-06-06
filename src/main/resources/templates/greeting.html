@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>This is the html page greeting.html</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div>Calling the API /greeting (http://localhost:8080/greeting?name=FJ) ends up in mapping to thymeleaf template greeting.html</div>
+    <div>Rendering greeting.html here</div>
+    <h2>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    </h2>
+</body>
+</html>
